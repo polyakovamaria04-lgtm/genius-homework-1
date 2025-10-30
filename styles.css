@@ -1,0 +1,280 @@
+:root{
+    --brand-main-color:#2b7fff;
+    --beauty-2-c1: #011c44;
+    --main-bg-color:#ffffff; 
+    --list-color-black:#000; 
+    --beauty-landing-2-s5:#747272;
+
+
+    --font-family:"Roboto",sans-serif;
+    --third-family:"Play",sans-serif;
+}
+
+/* font faces */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-v49-latin-regular.woff2') format('woff2'),
+        url('fonts/roboto-v49-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/roboto-v49-latin-600.woff2') format('woff2'),
+        url('fonts/roboto-v49-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/roboto-v49-latin-regular.woff2') format('woff2'),
+        url('fonts/roboto-v49-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Play-Regular.woff2') format('woff2'),
+        url('fonts/Play-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Play-Bold.woff2') format('woff2'),
+        url('fonts/Play-Bold.woff') format('woff');
+}
+
+/* base */
+
+footer{
+    background-color: var(--beauty-2-c1);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+.background {
+background-image: url("images/background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 1501px;
+    height: 687px;
+}
+
+
+
+.main-logo{
+    color: var(--brand-main-color);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 95%;
+        text-transform: capitalize;
+       font-family: var(--third-family);
+
+}
+/* logo */
+
+
+.links{
+    text-decoration: none;
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--beauty-2-c1);
+}
+.links:hover{
+    font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--brand-main-color);
+}
+
+/* title-section */
+
+.title-text{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--beauty-landing-2-c1);
+}
+
+.main-title{
+    font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 81%;
+        text-transform: capitalize;
+        color: var(--brand-main-color);
+}
+.title-batton{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--main-bg-color);
+        border-radius: 24px;
+            padding: 16px 24px;
+            
+            background: var(--brand-main-color);
+}
+.title-batton:hover{
+    border-radius: 32px;
+        padding: 16px 32px;
+        
+        font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--beauty-2-c1);
+            
+}
+.main-title-text{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        
+        color: var(--beauty-2-c1);
+}
+
+/* transform-section */
+
+.transform-title{
+    font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 64px;
+        color: var(--beauty-2-c1);
+    
+}
+.transform-title span{
+    color: var(--brand-main-color);
+    text-transform: capitalize;
+}
+.transform-text{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 173%;
+        color: var(--beauty-2-c1);
+}
+.transform-text span{
+    font-weight: 600;
+        text-transform: capitalize;
+}
+
+/* why section */
+.why-title{
+    font-family: var(--third-family);
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+color: var(--beauty-2-c1);
+}
+.why-title span{
+    color: var(--brand-main-color);
+}
+.why-text{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 133%;
+        text-align: center;
+        color: var(--list-color-black);
+}
+
+/* our procedures */
+.our-procedures-title{
+    font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 64px;
+        text-align: center;
+        color: var(--beauty-2-c1);
+}
+.our-procedures-title span{
+    color:var(--brand-main-color)
+}
+.procedures-text{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 118%;
+        
+        color: var(--main-bg-color);
+}
+.masks{
+    background-image: url('images/masks.jpg');
+    background-repeat: no-repeat;
+    width: 344px;
+        height: 456px;
+}
+.injections{
+    background-image: url('images/injections.jpg');
+    background-repeat: no-repeat;
+    width: 344px;
+        height: 456px;
+}
+.face-cleaning{
+    background-image: url('images/face_cleaning.jpg');
+    background-repeat: no-repeat;
+    width: 344px;
+        height: 456px;
+}
+
+/* contact section */
+
+.contact-title{
+    font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 64px;
+        text-align: center;
+        color: var(--beauty-2-c1);
+}
+.contact-title span{
+    color:var(--brand-main-color);
+}
+
+/* footer */
+
+.footer-logo{
+    font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 87%;
+        text-transform: capitalize;
+        color: var(--brand-main-color);
+}
+.footer-link{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--main-bg-color);
+      text-decoration: none;
+
+}
+.footer-link:hover{
+font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--brand-main-color);
+}
+.text-footer{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--main-bg-color);
+}
+.copy {
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        color: var(--beauty-landing-2-s5);
+}
