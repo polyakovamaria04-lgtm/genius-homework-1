@@ -1,0 +1,41 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 2;
+
+    &.is-open {
+        transform: translateY(0);
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        border: none;
+        background: transparent;
+    
+    &:hover, &:focus{
+      background: var(--brand-main-color);
+    }
+    }
+
+&__list{
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin: 16px 0;
+}
+
+&__container{
+display: flex;
+flex-direction: column;
+margin: 16px 0 0 24px;
+}
+
+}

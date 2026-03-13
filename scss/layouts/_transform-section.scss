@@ -1,0 +1,176 @@
+.transform-section{
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @media screen and (min-width:$br-tablet) {
+    padding: 0 3%;
+    }
+    
+  &__content {
+            
+    @media screen and (min-width:$br-tablet) {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+    }
+    }
+
+&__title {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--beauty-2-c1);
+    margin-bottom: 24px;
+    width: 264px;
+    
+    @media screen and (min-width:$br-tablet) {
+    font-size: 46px;
+    font-weight: 600;
+    width: 360px;
+    margin-top: 0px;
+    }
+
+    @media screen and (min-width:$br-desktop) {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 40px;
+    width: 528px;
+    margin-top: -120px;
+    }
+
+    span {
+            color: var(--brand-main-color);
+            text-transform: capitalize;
+        }
+}
+
+&__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 173%;
+    color: var(--beauty-2-c1);
+
+
+    span {
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        @media screen and (min-width:$br-tablet) {
+            font-size: 20px;
+            
+        }
+    
+        @media screen and (min-width:$br-desktop) {
+            font-size: 22px;
+            margin-bottom: 40px;
+           
+        }
+}
+
+&__photos {
+    display: none;
+
+@media screen and (min-width:$br-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    position: relative;
+    max-width: 40%;
+    }
+
+@media screen and (min-width:$br-desktop) {
+    gap: 70px;
+}
+
+    img {
+        border-radius: 50%;
+        width: 224px;
+        height: 224px;
+        object-fit: cover;
+
+    @media screen and (min-width:$br-desktop) {
+    width: 327px;
+    height: 327px;
+    margin-top: -60px;
+    gap: 40px;
+    }
+
+        &:first-child {
+            align-self: flex-start;
+            }
+        
+        &:last-child{
+            align-self: flex-end;
+        }
+    
+    }
+
+    svg {
+            align-self: flex-end;
+        }
+}
+
+&__first-star {
+    width: 40px;
+    height: 40px;
+    fill: var(--brand-main-color);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    animation-name: rotate-scale;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    
+
+@media screen and (min-width:$br-tablet) {
+    width: 40px;
+    height: 40px;
+    
+}
+}
+
+&__last-star {
+    width: 16px;
+    height: 16px;
+    fill: var(--beauty-landing-2-s5);
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    animation-name: rotate-scale;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+
+}
+
+&__second-star {
+    width: 40px;
+    height: 40px;
+    fill: var(--beauty-2-c1);
+    position: absolute;
+    right: 6%;
+    animation-name: rotate-scale;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+
+    @media screen and (min-width:$br-tablet) {
+    width: 64px;
+    height: 64px;
+    top: 38%;
+    right: -18%;
+    }
+    }
+}
+
+
+
+
+
+
+
+
