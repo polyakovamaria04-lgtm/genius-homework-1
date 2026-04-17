@@ -3,10 +3,10 @@ const menuBtnOpen = document.querySelector('.menu-btn-open');
 const menuBtnClose = document.querySelector('.menu-btn-close');
 
 const toggleMenu = () => {
-mobileMenu.classList.toggle('is-open');
-document.body.classList.toggle('no-scroll');
-const expanded = menuBtnOpen.getAttribute('aria-expanded') === 'true';
-menuBtnOpen.setAttribute('aria-expanded', String(!expanded));
+  mobileMenu.classList.toggle('is-open');
+  document.body.classList.toggle('no-scroll');
+  const expanded = menuBtnOpen.getAttribute('aria-expanded') === 'true';
+  menuBtnOpen.setAttribute('aria-expanded', String(!expanded));
 };
 
 menuBtnOpen.addEventListener('click', toggleMenu);
@@ -17,14 +17,14 @@ document.addEventListener('keydown', (e) => {
     mobileMenu.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
     menuBtnOpen.setAttribute('aria-expanded', 'false');
-    }
+  }
 });
 
 const mobileLinks = document.querySelectorAll('.mobile-menu a');
 
-mobileLinks.forEach(link => {
+mobileLinks.forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
-    });
+  });
 });

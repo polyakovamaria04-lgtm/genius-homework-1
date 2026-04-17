@@ -1,23 +1,23 @@
 .links {
-    text-decoration: none;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--beauty-2-c1);
-    transition: color 0.2s;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--beauty-2-c1);
+  transition: color 0.2s;
 
-@media screen and (min-width:$br-tablet) {
-     font-size: 16px;
-    }
+  @media screen and (min-width: $br-tablet) {
+    font-size: 16px;
+  }
 
-@media screen and (min-width:$br-desktop) {
+  @media screen and (min-width: $br-desktop) {
     font-size: 18px;
-}
+  }
 
-&:hover, &:focus {
-        font-weight: 700;
-        font-size: 16px;
-        color: var(--brand-main-color);
-    }
-
+  &:hover,
+  &:focus {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brand-main-color);
+  }
 }

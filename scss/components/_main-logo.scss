@@ -1,15 +1,14 @@
 .main-logo {
-    color: var(--brand-main-color);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 95%;
-    text-transform: capitalize;
-    font-family: var(--third-family);
-    max-width: 74px;
+  max-width: 74px;
+  font-family: var(--third-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 95%;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--brand-main-color);
 
-    @media screen and (min-width:$br-tablet) {
+  @media screen and (min-width: $br-tablet) {
     font-size: 22px;
-    }
-
+  }
 }

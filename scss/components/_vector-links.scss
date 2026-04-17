@@ -1,85 +1,83 @@
 .vector-links {
-    display: none;
-   
-&--mobile-menu{
-    display:flex;
+  display: none;
+
+  &--mobile-menu {
+    display: flex;
     gap: 16px;
+  }
 
-}
-
-&--footer{
+  &--footer {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
     margin-bottom: 8px;
-    
-    @media screen and (min-width:$br-tablet) {
-        gap: 24px;
+
+    @media screen and (min-width: $br-tablet) {
+      gap: 24px;
     }
-    
-    @media screen and (min-width:$br-desktop) {    
-        position: absolute;
-        top: 70%;
-        left: 50%;
+
+    @media screen and (min-width: $br-desktop) {
+      position: absolute;
+      top: 70%;
+      left: 50%;
     }
-}
-    
-@media screen and (min-width:$br-tablet) {
+  }
+
+  @media screen and (min-width: $br-tablet) {
     display: flex;
-    gap: 10px;
     justify-content: center;
     align-items: center;
-    }
+    gap: 10px;
+  }
 
-@media screen and (min-width:$br-desktop) {
+  @media screen and (min-width: $br-desktop) {
     gap: 30px;
-}
-    
-   
-&__icon{
-        width: 32px;
-        height: 32px;
-        display: inline-flex;
-        fill: var(--list-color-black);
-        transition: fill 0.2s;
+  }
 
-        &:hover {
-                fill: var(--main-bg-color);
-            }
-@media screen and (min-width:$br-tablet) {
-    width: 24px;
-    height: 24px;
-}
-
-@media screen and (min-width:$br-desktop) {
+  &__icon {
+    display: inline-flex;
     width: 32px;
     height: 32px;
-}
-        
-&--footer{
-         fill: var(--main-bg-color);
-    
-        &:hover {
-            fill: var(--beauty-landing-2-s5);
-        }
-    
-        @media screen and (min-width:$br-tablet) {
-            width: 24px;
-            height: 24px;
-        }
-    
-        @media screen and (min-width:$br-desktop) {
-            width: 42px;
-            height: 42px;
-        }
-}
+    transition: fill 0.2s;
+    fill: var(--list-color-black);
 
-&--mobile-menu{
+    &:hover {
+      fill: var(--main-bg-color);
+    }
 
-    &:hover, &:focus {
+    @media screen and (min-width: $br-tablet) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--footer {
+      fill: var(--main-bg-color);
+
+      &:hover {
+        fill: var(--beauty-landing-2-s5);
+      }
+
+      @media screen and (min-width: $br-tablet) {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media screen and (min-width: $br-desktop) {
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    &--mobile-menu {
+      &:hover,
+      &:focus {
         fill: var(--brand-main-color);
+      }
     }
+  }
 }
-    }
-}
-

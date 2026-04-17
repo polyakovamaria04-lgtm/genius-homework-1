@@ -1,90 +1,86 @@
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-      
-&__field {
-        position: relative;
-        margin: 0 auto 16px;
-        }
-&__label {
-        display: block;
-        position: absolute;
-        top: 16px;
-        left: 42px;
-        visibility: hidden;
-        
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    }
-&__input {
+  &__field {
+    position: relative;
+    margin: 0 auto 16px;
+  }
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    display: block;
+    visibility: hidden;
+  }
+
+  &__input {
+    width: 240px;
     padding: 16px 24px;
     border: 2px solid var(--beauty-landing-2-s5);
     border-radius: 32px;
-    background-color: transparent;
     font-size: 13px;
     line-height: 1.15;
     color: var(--main-bg-color);
-    width: 240px;
-    
+    background-color: transparent;
+
     &:focus {
-        border-color: var(--beauty-landing-2-s5);
-        background-color: var(--beauty-landing-2-s5);
-        outline: none;
+      border-color: var(--beauty-landing-2-s5);
+      background-color: var(--beauty-landing-2-s5);
+      outline: none;
     }
 
     &::placeholder {
-        color: var(--main-bg-color);
-        font-size: 13px;
-        line-height: 1.15;
+      font-size: 13px;
+      line-height: 1.15;
+      color: var(--main-bg-color);
     }
 
-@media screen and (min-width:$br-desktop) {
-      padding: 18px 32px;
+    @media screen and (min-width: $br-desktop) {
       width: 310px;
+      padding: 18px 32px;
     }
+  }
 
-}
-
-&__button {
+  &__button {
     display: block;
     max-width: 241px;
-    border-radius: 24px;
     padding: 12px 16px;
     border: 2px solid var(--brand-main-color);
-    background-color: var(--brand-main-color);
-    color: var(--main-bg-color);
-    font-size: 14px;
+    border-radius: 24px;
+    margin: 0 14px 8px;
     font-family: var(--font-family);
-    margin:0 14px 8px;
+    font-size: 14px;
+    color: var(--main-bg-color);
+    background-color: var(--brand-main-color);
 
     &:hover {
-        background-color: transparent;
-
+      background-color: transparent;
     }
-    
-@media screen and (min-width:$br-desktop) {
-    font-size: 18px;
-    padding: 16px 32px;
-    border-radius: 32px;
-    margin: 0 14px 8px;
-    max-width: 281px;
-}
-}
-&__confirm {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--beauty-landing-2-s5);
-    margin-top: 8px;
-    text-align: center;
 
+    @media screen and (min-width: $br-desktop) {
+      max-width: 281px;
+      padding: 16px 32px;
+      border-radius: 32px;
+      margin: 0 14px 8px;
+      font-size: 18px;
+    }
+  }
+
+  &__confirm {
+    margin-top: 8px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
 
     a {
-        text-decoration: underline;
-        color: var(--beauty-landing-2-s5);
+      text-decoration: underline;
+      color: var(--beauty-landing-2-s5);
     }
-
+  }
 }
-}
-

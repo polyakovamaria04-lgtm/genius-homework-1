@@ -1,125 +1,125 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    transition: opacity 0.2s, visibility 0.2s;
-    z-index: 2;
-    overflow-y: auto;
-    
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  overflow-y: auto;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
 
-    @media screen and (min-width:$br-tablet) {
+  @media screen and (min-width: $br-tablet) {
     padding: 20px 0;
-    }
+  }
 }
 
 .modal {
-    width: 100%;
-    height: 100%;
-    background-color: var(--beauty-2-c1);
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 48px;
-    overflow-y: auto;
-    
-    @media screen and (min-width:$br-tablet) {
-    max-height: 680px;
+  position: relative;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 48px;
+  border-radius: 40px;
+  margin: 10px;
+  background-color: var(--beauty-2-c1);
+
+  @media screen and (min-width: $br-tablet) {
     max-width: 732px;
+    max-height: 680px;
     border-radius: 48px;
-    }
+  }
 
-    @media screen and (min-width:$br-desktop){
+  @media screen and (min-width: $br-desktop) {
     max-height: 90vh;
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    border: none;
+    background: transparent;
+
+    @media screen and (min-width: $br-tablet) {
+      top: 40px;
+      right: 40px;
     }
-
-
-&__button-close {
-        position: absolute;
-        top: 4%;
-        right: 10%;
-        background: transparent;
-        border: none;
-
-        @media screen and (min-width:$br-tablet) {
-        top: 40px;
-        right: 40px;
-        }
 
     svg {
-            width: 26px;
-            height: 26px;
-            display: inline-block;
-            stroke-width: 0;
-            fill: none;
-            background: transparent;
-            color: var(--main-bg-color);
-        
-        @media screen and (min-width:$br-tablet) {
-                width: 32px;
-                height: 32px;
-            }
-    
-        }
-    &:hover svg {
-             color: var(--beauty-landing-2-s5);
-             transform: scale(1.1);
-         }
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      color: var(--main-bg-color);
+      background: transparent;
+      stroke-width: 0;
+      fill: none;
 
+      @media screen and (min-width: $br-tablet) {
+        width: 32px;
+        height: 32px;
+      }
     }
-        &__title {
-            font-family: var(--third-family);
-            font-weight: 500;
-            font-size: 46px;
-            text-align: center;
-            color: var(--main-bg-color);
-            max-width: 456px;
-            margin-bottom: 20px;
 
-            @media screen and (min-width:$br-tablet) {
-            font-weight: 600;
-            font-size: 56px;
-            margin-bottom: 32px;
-            }
+    &:hover svg {
+      color: var(--beauty-landing-2-s5);
+      transform: scale(1.1);
+    }
+  }
 
-            @media screen and (min-width:$br-desktop) {
-            font-weight: 700;
-            font-size: 64px;
-            margin-bottom: 40px;
-            }
-    
-        }
-    
-        &__text {
-            font-family: var(--font-family);
-            font-weight: 400;
-            font-size: 16px;
-            text-align: center;
-            color: var(--main-bg-color);
-            max-width: 200px;
-            margin-bottom: 20px;
-    
-            span {
-                color: var(--brand-main-color);
-            }
+  &__title {
+    max-width: 456px;
+    margin-bottom: 20px;
+    font-family: var(--third-family);
+    font-size: 46px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--main-bg-color);
 
-        @media screen and (min-width:$br-tablet) {
-            font-weight: 600;
-            font-size: 22px;
-            margin-bottom: 32px;
-            max-width: 278px;
-        }
-        }
-        
+    @media screen and (min-width: $br-tablet) {
+      margin-bottom: 32px;
+      font-size: 56px;
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      margin-bottom: 40px;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    max-width: 200px;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-bg-color);
+
+    span {
+      color: var(--brand-main-color);
+    }
+
+    @media screen and (min-width: $br-tablet) {
+      max-width: 278px;
+      margin-bottom: 32px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

@@ -1,171 +1,161 @@
 .footer {
-    padding: 56px 0;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--beauty-2-c1);
-    margin-bottom: -30px;
-    
-    
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 56px 0;
+  background-color: var(--beauty-2-c1);
 
-    @media screen and (min-width:$br-tablet) {
-        flex-direction: row;
-        gap: 40px;
-        }
-    
-    @media screen and (min-width:$br-desktop) {
-        justify-content: space-between;
-        padding: 0 60px;             
-        gap: 60px;
-        align-items: start;
-        justify-items: start;
-    }
-
-    }
-
-    &__logo {
-        font-family: var(--third-family);
-        font-weight: 700;
-        max-width: 57px;
-        font-size: 16px;
-        color: var(--brand-main-color);
-        line-height: 94%;
-        text-transform: capitalize;
-        margin-bottom: 40px;
-
-        @media screen and (min-width:$br-tablet) {
-            font-size: 20px;
-            line-height: 88%;
-            margin-bottom: 24px;
-        }
-
-        @media screen and (min-width:$br-desktop) {
-            font-size: 24px;
-            max-width: 83px;
-            margin-bottom: 16px;
-            
-        }
-
-    }
- &__nav{
-    @media screen and (min-width:$br-desktop) {
-     
-    }
- }
-
-    &__link {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 14px;
-        color: var(--main-bg-color);
-        text-decoration: none;
-        margin-bottom: 16px;
-
-        &:hover {
-            font-family: var(--font-family);
-            font-weight: 700;
-            color: var(--brand-main-color);
-        }
-
-        @media screen and (min-width:$br-tablet) {
-            &:hover {
-                font-weight: 700;
-            }
-        }
-
-        @media screen and (min-width:$br-desktop) {
-            font-size: 16px;
-        }
-    }
-
-    &__additional-container {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-
-    @media screen and (min-width:$br-tablet){
-        flex: 1;
-        align-items: center;
-    }
-    @media screen and (min-width:$br-desktop){
-        display:contents;
-        }
-    }
-    &__mobile-wrapper{
-
-    @media screen and (min-width:$br-tablet) {
-        flex: 1;
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    @media screen and (min-width:$br-desktop) {
-     
-        display: contents;
-         }
-    }
-   
-    &__list {
-        display: none;
-
-        @media screen and (min-width:$br-tablet) {
-            display: block;
-        }
-        @media screen and (min-width:$br-desktop) {
-        
-       
-         }
-    }
-    
-}
-
-
-.copy-container {
+  &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
- @media screen and (min-width:$br-desktop) {
-     
- }
-    
-
-    img {
-        display: none;
-
-        @media screen and (min-width: $br-desktop) {
-            display: block;
-            position: absolute;
-            top: 36%;
-            right: 0;
-            height: 213px;
-            width: 278px;
-        }
+    @media screen and (min-width: $br-tablet) {
+      flex-direction: row;
+      gap: 40px;
     }
 
-    &__copy {
-        text-align: center;
-
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 12px;
-        color: var(--beauty-landing-2-s5);
-
-        @media screen and (min-width: $br-tablet) {
-            font-size: 13px;
-        }
-        @media screen and (min-width:$br-desktop) {
-            
-            justify-self: start;
-        }
+    @media screen and (min-width: $br-desktop) {
+      justify-content: space-between;
+      align-items: start;
+      gap: 60px;
+      padding: 0 60px;
+      justify-items: start;
     }
-&__legal{
-    @media screen and (min-width:$br-desktop) {
-   
+  }
+
+  &__logo {
+    max-width: 57px;
+    margin-bottom: 40px;
+    font-family: var(--third-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 94%;
+    text-transform: capitalize;
+    color: var(--brand-main-color);
+
+    @media screen and (min-width: $br-tablet) {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: 88%;
     }
+
+    @media screen and (min-width: $br-desktop) {
+      max-width: 83px;
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+  }
+
+  &__nav {
+    @media screen and (min-width: $br-desktop) {
+    }
+  }
+
+  &__link {
+    margin-bottom: 16px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-bg-color);
+
+    &:hover {
+      font-family: var(--font-family);
+      font-weight: 700;
+      color: var(--brand-main-color);
+    }
+
+    @media screen and (min-width: $br-tablet) {
+      &:hover {
+        font-weight: 700;
+      }
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__additional-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    @media screen and (min-width: $br-tablet) {
+      flex: 1;
+      align-items: center;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      display: contents;
+    }
+  }
+
+  &__mobile-wrapper {
+    @media screen and (min-width: $br-tablet) {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      display: contents;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @media screen and (min-width: $br-tablet) {
+      display: block;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+    }
+  }
 }
+
+.copy-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $br-desktop) {
+  }
+
+  img {
+    display: none;
+
+    @media screen and (min-width: $br-desktop) {
+      position: absolute;
+      top: 36%;
+      right: 0;
+      display: block;
+      width: 278px;
+      height: 213px;
+    }
+  }
+
+  &__copy {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
+
+    @media screen and (min-width: $br-tablet) {
+      font-size: 13px;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      justify-self: start;
+    }
+  }
+
+  &__legal {
+    @media screen and (min-width: $br-desktop) {
+    }
+  }
 }

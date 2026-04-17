@@ -1,36 +1,20 @@
-.blue-mobile-clip path {
-    transform-box: fill-box;
-    transform-origin: center;
-    transform: scaleX(1.5) scaleY(1.2) translateY(50px);
+.mobile-clip path {
+  transform: scaleX(2);
+  transform-origin: center;
+  transform-box: fill-box;
 
-    @media screen and (min-width:$br-tablet) {
-    transform: translateX(360px) scaleX(1.5);
-    }
-    
-    @media screen and (min-width:$br-desktop) {
-    transform: translateX(600px) scaleX(2);
-    }
-
-    @media screen and (min-width:1721px) {
-    transform: translateX(900px) scaleX(3);
-    }
-}
-
-.mobile-clip path{
-   
-    transform-box: fill-box;
-    transform-origin: center;
-    transform: scaleX(2);
-
-    @media screen and (max-width:373px){
+  @media screen and (max-width: 373px) {
     transform: scaleX(1.5) translateY(50px);
-    }
-        
-    @media screen and (min-width:$br-tablet) {
-    transform: scale(3, 1.1) translateX(110px) translateY(80px);
-    }
+  }
 
-    @media screen and (min-width:$br-desktop) {
+  @media screen and (min-width: $br-tablet) {
+    transform: scale(3, 1.1) translateX(110px) translateY(80px);
+  }
+
+  @media screen and (min-width: $br-desktop) {
     transform: scale(4, 1.8) translateX(190px);
-    }
+  }
+}
+.mobile-clip {
+  position: absolute;
 }

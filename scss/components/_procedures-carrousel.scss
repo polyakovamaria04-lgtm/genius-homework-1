@@ -1,166 +1,155 @@
 .carousel {
-&__slider {
-    display: block;
-    gap: 32px;
-    align-items: center;
+  &__slider {
     position: relative;
-   
-@media screen and (min-width:$br-tablet){
-    margin: 0 110px;
-}
-}
-&__container {
+    display: block;
+    align-items: center;
+    gap: 32px;
+
+    @media screen and (min-width: $br-tablet) {
+      margin: 0 110px;
+    }
+  }
+
+  &__container {
     overflow: hidden;
-}
+  }
 
-// buttons
+  // buttons
 
-&__title {
-        font-family: var(--third-family);
-        font-weight: 400;
-        font-size: 32px;
-        text-align: center;
-        color: var(--beauty-2-c1);
-        margin-bottom: 24px;
-
-        span {
-            color: var(--brand-main-color)
-        }
-
-   @media screen and (min-width:$br-tablet) {
-        font-weight: 400;
-        font-size: 48px;
-        margin-bottom: 32px;
-        }
-
-    @media screen and (min-width:$br-desktop){
-        font-weight: 700;
-        font-size: 64px;
-        margin-bottom: 48px;
-
-    }
-    }
-
-&__text {
-    font-family: var(--font-family);
+  &__title {
+    margin-bottom: 24px;
+    font-family: var(--third-family);
+    font-size: 32px;
     font-weight: 400;
+    text-align: center;
+    color: var(--beauty-2-c1);
+
+    span {
+      color: var(--brand-main-color);
+    }
+
+    @media screen and (min-width: $br-tablet) {
+      margin-bottom: 32px;
+      font-size: 48px;
+      font-weight: 400;
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      margin-bottom: 48px;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
     font-size: 22px;
+    font-weight: 400;
     line-height: 118%;
-    color: var(--main-bg-color);    
-   
-    }
+    color: var(--main-bg-color);
+  }
 
-&__arrow-wrapper {
+  &__arrow-wrapper {
     display: none;
-    @media screen and (min-width:$br-tablet) {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: transparent;
-        border: 2px solid var(--list-color-black);
-        cursor: pointer;
-        flex-shrink: 0;
-        padding: 0;
-        position: absolute;
+
+    @media screen and (min-width: $br-tablet) {
+      position: absolute;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 2px solid var(--list-color-black);
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
     }
 
-       &.prev{
-        top: 45%;
-        right: -15%;
+    &.prev {
+      top: 45%;
+      right: -15%;
 
-        @media screen and (min-width:$br-desktop){
+      @media screen and (min-width: $br-desktop) {
         top: 45%;
         right: -6%;
-        }
-        }
-
-        &.next {
-            transform: rotate(180deg);
-            position: absolute;
-            top: 45%;
-            left: -15%;
-
-        @media screen and (min-width:$br-desktop){
-        top: 45%;
-        left: -6%;
-        }
-        } 
-
-        &:hover {
-               
-                border: 2px solid var(--main-bg-color);
-                background-color: var(--brand-main-color);
-
-            }
-        }
-&__arrow-wrapper:hover .carousel__arrow {
-    fill: var(--main-bg-color);
-}
-
-&__arrow {
-    fill: var(--list-color-black);
-    display: block;
-}
-
-// cards
-
-&__card{
-    border-radius: 110px 4px;
-    background-size: cover;
-    transition: transform 0.2s;
-    overflow: hidden;
-    margin: 0 auto;
-    max-width: 320px;
-
-&:hover {
-        transform: scale(1.05);
+      }
     }
 
- 
+    &.next {
+      position: absolute;
+      top: 45%;
+      left: -15%;
+      transform: rotate(180deg);
 
-@media screen and (min-width:$br-desktop){
-    border-radius: 120px 4px;
-}
-}
+      @media screen and (min-width: $br-desktop) {
+        top: 45%;
+        left: -6%;
+      }
+    }
 
+    &:hover {
+      border: 2px solid var(--main-bg-color);
+      background-color: var(--brand-main-color);
+    }
+  }
 
-&__card-container{
+  &__arrow-wrapper:hover .carousel__arrow {
+    fill: var(--main-bg-color);
+  }
+
+  &__arrow {
+    display: block;
+    fill: var(--list-color-black);
+  }
+
+  // cards
+
+  &__card {
+    overflow: hidden;
+    max-width: 320px;
+    border-radius: 110px 4px;
+    margin: 0 auto;
+    background-size: cover;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media screen and (min-width: $br-desktop) {
+      border-radius: 120px 4px;
+    }
+  }
+
+  &__card-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 24px;
     height: 416px;
-    position: relative;
-    background: linear-gradient(180deg,
-                rgba(1, 28, 68, 0) 47.4%,
-                rgba(1, 28, 68, 0.73) 82.66%,
-                #011c44 99.06%);
-       
+    padding: 24px;
+    background: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47.4%,
+      rgba(1, 28, 68, 0.73) 82.66%,
+      #011c44 99.06%
+    );
 
-
-@media screen and (min-width:$br-desktop) {
-    height: 456px; 
+    @media screen and (min-width: $br-desktop) {
+      height: 456px;
     }
-}
+  }
 
-
-&__image {
+  &__image {
+    position: absolute;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    position: absolute;
     object-fit: cover;
-    z-index: -1;
-    
+  }
 }
-}
-
-
-
-
-
